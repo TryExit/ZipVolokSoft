@@ -35,7 +35,8 @@ namespace ZipVolokSoft
         // Drag & Drop для добавления файлов
         private void Window_DragOver(object sender, DragEventArgs e)
         {
-            e.Effects = DragDropEffects.Copy;
+            e.Effects = DragDropEffects.Copy; // Указываем, что копирование разрешено
+            e.Handled = true; // Отмечаем событие как обработанное
         }
 
         private void Window_Drop(object sender, DragEventArgs e)
@@ -43,12 +44,22 @@ namespace ZipVolokSoft
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
             {
                 string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-                foreach (var file in files)
+
+                foreach (string file in files)
                 {
-                    FileList.Items.Add(file);
+                    if (File.Exists(file)) // Проверяем, что это файл
+                    {
+                        FileList.Items.Add(file);
+                    }
                 }
-                DropHint.Visibility = Visibility.Collapsed; // Скрыть подсказку
+
+                // Скрываем подсказку, если файлы добавлены
+                if (FileList.Items.Count > 0)
+                {
+                    DropHint.Visibility = Visibility.Collapsed;
+                }
             }
+            e.Handled = true; // Отмечаем событие как обработанное
         }
 
         private void CreateArchive_Click(object sender, RoutedEventArgs e)
@@ -59,6 +70,7 @@ namespace ZipVolokSoft
                 return;
             }
 
+            // Создаем диалог для выбора имени архива и папки
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
                 Filter = "ZIP Archive (*.zip)|*.zip|7Z Archive (*.7z)|*.7z",
@@ -98,14 +110,17 @@ namespace ZipVolokSoft
             }
         }
 
+
         // Метод для создания 7z-архива с использованием библиотеки SevenZipSharp
+        private SevenZip.CompressionLevel selectedCompressionLevel = SevenZip.CompressionLevel.Ultra;
+
         private void CreateSevenZipArchive(string archivePath)
         {
             try
             {
                 SevenZip.SevenZipCompressor compressor = new SevenZip.SevenZipCompressor
                 {
-                    CompressionLevel = SevenZip.CompressionLevel.Ultra, // Уровень сжатия
+                    CompressionLevel = selectedCompressionLevel, // Используем выбранный уровень сжатия
                     CompressionMethod = SevenZip.CompressionMethod.Lzma2 // Метод сжатия
                 };
 
@@ -127,9 +142,11 @@ namespace ZipVolokSoft
         }
 
 
+
         // Обработчик для распаковки архива
         private void ExtractArchive_Click(object sender, RoutedEventArgs e)
         {
+            // Открытие диалога для выбора архива
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
                 Filter = "Архивы (*.zip;*.7z)|*.zip;*.7z",
@@ -140,49 +157,38 @@ namespace ZipVolokSoft
             {
                 string archivePath = openFileDialog.FileName;
 
-                using (var archive = ArchiveFactory.Open(archivePath))
+                // Создаем диалог для выбора папки для распаковки
+                var folderDialog = new System.Windows.Forms.FolderBrowserDialog
                 {
-                    // Папка для распаковки
-                    var extractPath = Path.Combine(Path.GetDirectoryName(archivePath), Path.GetFileNameWithoutExtension(archivePath));
-                    Directory.CreateDirectory(extractPath);
+                    Description = "Выберите папку для распаковки",
+                    ShowNewFolderButton = true
+                };
+
+                if (folderDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    string extractPath = folderDialog.SelectedPath;
 
                     try
                     {
-                        foreach (var entry in archive.Entries)
+                        // Открытие архива и распаковка файлов
+                        using (var archive = ArchiveFactory.Open(archivePath))
                         {
-                            if (!entry.IsDirectory)
+                            foreach (var entry in archive.Entries)
                             {
-                                entry.WriteToDirectory(extractPath, new ExtractionOptions { ExtractFullPath = true, Overwrite = true });
+                                if (!entry.IsDirectory)
+                                {
+                                    entry.WriteToDirectory(extractPath, new ExtractionOptions { ExtractFullPath = true, Overwrite = true });
+                                }
                             }
-                        }
 
-                        MessageBox.Show($"Архив успешно распакован в папку: {extractPath}", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                            MessageBox.Show($"Архив успешно распакован в папку: {extractPath}", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                        }
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show($"Ошибка при распаковке архива: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 }
-            }
-        }
-
-        private void CreateSevenZipArchive(string archivePath, string[] files)
-        {
-            try
-            {
-                SevenZip.SevenZipCompressor compressor = new SevenZip.SevenZipCompressor
-                {
-                    CompressionLevel = SevenZip.CompressionLevel.Ultra, // Уровень сжатия
-                    CompressionMethod = SevenZip.CompressionMethod.Lzma2 // Метод сжатия
-                };
-
-                compressor.CompressFiles(archivePath, files);
-
-                MessageBox.Show($"Архив 7z успешно создан: {archivePath}", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при создании архива 7z: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -224,5 +230,51 @@ namespace ZipVolokSoft
                 }
             }
         }
+
+        private void DeleteFileButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Получаем кнопку, на которую кликнули
+            var button = sender as Button;
+            if (button != null)
+            {
+                // Получаем элемент, которому принадлежит эта кнопка (это будет элемент в ListBox)
+                var listItem = button.DataContext as string;
+                if (listItem != null)
+                {
+                    // Удаляем элемент из списка
+                    FileList.Items.Remove(listItem);
+                }
+            }
+        }
+
+        private void CompressionLevel_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // Получаем выбранный элемент
+            var selectedItem = CompressionLevel.SelectedItem as ComboBoxItem;
+
+            if (selectedItem != null)
+            {
+                // Получаем текст выбранного элемента
+                string selectedCompression = selectedItem.Content.ToString();
+
+                // В зависимости от выбранного значения, изменяем уровень сжатия
+                switch (selectedCompression)
+                {
+                    case "Низкий":
+                        selectedCompressionLevel = SevenZip.CompressionLevel.High;
+                        break;
+                    case "Средний":
+                        selectedCompressionLevel = SevenZip.CompressionLevel.Normal;
+                        break;
+                    case "Высокий":
+                        selectedCompressionLevel = SevenZip.CompressionLevel.Ultra;
+                        break;
+                    default:
+                        selectedCompressionLevel = SevenZip.CompressionLevel.Normal;
+                        break;
+                }
+            }
+        }
+
     }
 }

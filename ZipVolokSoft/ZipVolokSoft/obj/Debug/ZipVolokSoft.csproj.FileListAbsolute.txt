@@ -33,3 +33,39 @@ C:\Users\Hackathon\Documents\GitHub\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\D
 C:\Users\Hackathon\Documents\GitHub\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolok.C2CE51E4.Up2Date
 C:\Users\Hackathon\Documents\GitHub\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.exe
 C:\Users\Hackathon\Documents\GitHub\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.pdb
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\ZipVolokSoft.exe.config
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\ZipVolokSoft.exe
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\ZipVolokSoft.pdb
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\SevenZipSharp.dll
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\SharpCompress.dll
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\System.Buffers.dll
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\System.Memory.dll
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\ZstdSharp.dll
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\SharpCompress.pdb
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\System.Buffers.xml
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\System.Memory.xml
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.csproj.AssemblyReference.cache
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.csproj.SuggestedBindingRedirects.cache
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\MainWindow.g.cs
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\App.g.cs
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft_MarkupCompile.cache
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft_MarkupCompile.lref
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\App.baml
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\MainWindow.baml
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.g.resources
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.Properties.Resources.resources
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.csproj.GenerateResource.cache
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.csproj.CoreCompileInputs.cache
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.csproj.CopyComplete
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.exe
+C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.pdb
