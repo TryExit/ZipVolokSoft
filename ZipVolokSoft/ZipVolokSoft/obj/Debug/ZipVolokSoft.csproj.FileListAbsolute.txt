@@ -69,3 +69,5 @@ C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 кур�
 C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.csproj.CopyComplete
 C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.exe
 C:\Users\gigabyte\Documents\Работы\Курсовая работа 4 курс\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.pdb
+C:\Users\Hackathon\Documents\GitHub\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\PasswordDialog.g.cs
+C:\Users\Hackathon\Documents\GitHub\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\PasswordDialog.baml

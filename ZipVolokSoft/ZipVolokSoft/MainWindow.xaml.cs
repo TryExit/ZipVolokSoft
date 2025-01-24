@@ -102,6 +102,9 @@ namespace ZipVolokSoft
                     }
 
                     MessageBox.Show($"Архив успешно создан: {archivePath}", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    // Очищаем список файлов
+                    FileList.Items.Clear();
                 }
                 catch (Exception ex)
                 {
@@ -109,7 +112,6 @@ namespace ZipVolokSoft
                 }
             }
         }
-
 
         // Метод для создания 7z-архива с использованием библиотеки SevenZipSharp
         private SevenZip.CompressionLevel selectedCompressionLevel = SevenZip.CompressionLevel.Ultra;

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Hackathon\\Documents\\GitHub\\ZipVolokSoft\\ZipVolokSoft\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1B296EF5-C889-4FE6-9F6C-7D49A25BAC3E}|ZipVolokSoft\\ZipVolokSoft.csproj|C:\\Users\\Hackathon\\Documents\\GitHub\\ZipVolokSoft\\ZipVolokSoft\\zipvoloksoft\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B296EF5-C889-4FE6-9F6C-7D49A25BAC3E}|ZipVolokSoft\\ZipVolokSoft.csproj|solutionrelative:zipvoloksoft\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B296EF5-C889-4FE6-9F6C-7D49A25BAC3E}|ZipVolokSoft\\ZipVolokSoft.csproj|c:\\users\\hackathon\\documents\\github\\zipvoloksoft\\zipvoloksoft\\zipvoloksoft\\passworddialog.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{1B296EF5-C889-4FE6-9F6C-7D49A25BAC3E}|ZipVolokSoft\\ZipVolokSoft.csproj|solutionrelative:zipvoloksoft\\passworddialog.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1B296EF5-C889-4FE6-9F6C-7D49A25BAC3E}|ZipVolokSoft\\ZipVolokSoft.csproj|c:\\users\\hackathon\\documents\\github\\zipvoloksoft\\zipvoloksoft\\zipvoloksoft\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1B296EF5-C889-4FE6-9F6C-7D49A25BAC3E}|ZipVolokSoft\\ZipVolokSoft.csproj|solutionrelative:zipvoloksoft\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B296EF5-C889-4FE6-9F6C-7D49A25BAC3E}|ZipVolokSoft\\ZipVolokSoft.csproj|C:\\Users\\Hackathon\\Documents\\GitHub\\ZipVolokSoft\\ZipVolokSoft\\zipvoloksoft\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B296EF5-C889-4FE6-9F6C-7D49A25BAC3E}|ZipVolokSoft\\ZipVolokSoft.csproj|solutionrelative:zipvoloksoft\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B296EF5-C889-4FE6-9F6C-7D49A25BAC3E}|ZipVolokSoft\\ZipVolokSoft.csproj|c:\\users\\hackathon\\documents\\github\\zipvoloksoft\\zipvoloksoft\\zipvoloksoft\\passworddialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B296EF5-C889-4FE6-9F6C-7D49A25BAC3E}|ZipVolokSoft\\ZipVolokSoft.csproj|solutionrelative:zipvoloksoft\\passworddialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +26,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "PasswordDialog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Hackathon\\Documents\\GitHub\\ZipVolokSoft\\ZipVolokSoft\\ZipVolokSoft\\PasswordDialog.xaml.cs",
+              "RelativeDocumentMoniker": "ZipVolokSoft\\PasswordDialog.xaml.cs",
+              "ToolTip": "C:\\Users\\Hackathon\\Documents\\GitHub\\ZipVolokSoft\\ZipVolokSoft\\ZipVolokSoft\\PasswordDialog.xaml.cs",
+              "RelativeToolTip": "ZipVolokSoft\\PasswordDialog.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T08:25:21.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PasswordDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\Hackathon\\Documents\\GitHub\\ZipVolokSoft\\ZipVolokSoft\\ZipVolokSoft\\PasswordDialog.xaml",
+              "RelativeDocumentMoniker": "ZipVolokSoft\\PasswordDialog.xaml",
+              "ToolTip": "C:\\Users\\Hackathon\\Documents\\GitHub\\ZipVolokSoft\\ZipVolokSoft\\ZipVolokSoft\\PasswordDialog.xaml",
+              "RelativeToolTip": "ZipVolokSoft\\PasswordDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-24T08:24:24.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Hackathon\\Documents\\GitHub\\ZipVolokSoft\\ZipVolokSoft\\ZipVolokSoft\\MainWindow.xaml",
               "RelativeDocumentMoniker": "ZipVolokSoft\\MainWindow.xaml",
@@ -34,13 +67,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Hackathon\\Documents\\GitHub\\ZipVolokSoft\\ZipVolokSoft\\ZipVolokSoft\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "ZipVolokSoft\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Hackathon\\Documents\\GitHub\\ZipVolokSoft\\ZipVolokSoft\\ZipVolokSoft\\MainWindow.xaml.cs",
               "RelativeToolTip": "ZipVolokSoft\\MainWindow.xaml.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAcwDgAAAANAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAFUAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-23T11:39:43.711Z",
               "EditorCaption": ""
