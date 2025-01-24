@@ -32,11 +32,10 @@ namespace ZipVolokSoft
             InitializeComponent();
         }
 
-        // Drag & Drop для добавления файлов
         private void Window_DragOver(object sender, DragEventArgs e)
         {
-            e.Effects = DragDropEffects.Copy; // Указываем, что копирование разрешено
-            e.Handled = true; // Отмечаем событие как обработанное
+            e.Effects = DragDropEffects.Copy; 
+            e.Handled = true; 
         }
 
         private void Window_Drop(object sender, DragEventArgs e)
@@ -47,19 +46,18 @@ namespace ZipVolokSoft
 
                 foreach (string file in files)
                 {
-                    if (File.Exists(file)) // Проверяем, что это файл
+                    if (File.Exists(file)) 
                     {
                         FileList.Items.Add(file);
                     }
                 }
 
-                // Скрываем подсказку, если файлы добавлены
                 if (FileList.Items.Count > 0)
                 {
                     DropHint.Visibility = Visibility.Collapsed;
                 }
             }
-            e.Handled = true; // Отмечаем событие как обработанное
+            e.Handled = true; 
         }
 
         private void CreateArchive_Click(object sender, RoutedEventArgs e)
@@ -70,7 +68,6 @@ namespace ZipVolokSoft
                 return;
             }
 
-            // Создаем диалог для выбора имени архива и папки
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
                 Filter = "ZIP Archive (*.zip)|*.zip|7Z Archive (*.7z)|*.7z",
@@ -83,7 +80,6 @@ namespace ZipVolokSoft
 
                 try
                 {
-                    // Определяем формат архива
                     if (archivePath.EndsWith(".zip"))
                     {
                         using (var archive = SharpCompress.Archives.Zip.ZipArchive.Create())
@@ -103,7 +99,6 @@ namespace ZipVolokSoft
 
                     MessageBox.Show($"Архив успешно создан: {archivePath}", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                    // Очищаем список файлов
                     FileList.Items.Clear();
                 }
                 catch (Exception ex)
@@ -113,7 +108,6 @@ namespace ZipVolokSoft
             }
         }
 
-        // Метод для создания 7z-архива с использованием библиотеки SevenZipSharp
         private SevenZip.CompressionLevel selectedCompressionLevel = SevenZip.CompressionLevel.Ultra;
 
         private void CreateSevenZipArchive(string archivePath)
@@ -126,7 +120,6 @@ namespace ZipVolokSoft
                     CompressionMethod = SevenZip.CompressionMethod.Lzma2 // Метод сжатия
                 };
 
-                // Список файлов для добавления в архив
                 List<string> files = new List<string>();
                 foreach (var item in FileList.Items)
                 {
@@ -145,10 +138,8 @@ namespace ZipVolokSoft
 
 
 
-        // Обработчик для распаковки архива
         private void ExtractArchive_Click(object sender, RoutedEventArgs e)
         {
-            // Открытие диалога для выбора архива
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
                 Filter = "Архивы (*.zip;*.7z)|*.zip;*.7z",
@@ -159,7 +150,6 @@ namespace ZipVolokSoft
             {
                 string archivePath = openFileDialog.FileName;
 
-                // Создаем диалог для выбора папки для распаковки
                 var folderDialog = new System.Windows.Forms.FolderBrowserDialog
                 {
                     Description = "Выберите папку для распаковки",
@@ -172,7 +162,6 @@ namespace ZipVolokSoft
 
                     try
                     {
-                        // Открытие архива и распаковка файлов
                         using (var archive = ArchiveFactory.Open(archivePath))
                         {
                             foreach (var entry in archive.Entries)
@@ -193,9 +182,6 @@ namespace ZipVolokSoft
                 }
             }
         }
-
-
-        // Обработчик для просмотра содержимого архива
         private void ViewArchive_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
@@ -212,7 +198,7 @@ namespace ZipVolokSoft
                 {
                     using (var archive = ArchiveFactory.Open(archivePath))
                     {
-                        FileList.Items.Clear(); // Очищаем список файлов
+                        FileList.Items.Clear(); 
 
                         foreach (var entry in archive.Entries)
                         {
@@ -222,7 +208,7 @@ namespace ZipVolokSoft
                             }
                         }
 
-                        DropHint.Visibility = Visibility.Collapsed; // Скрыть подсказку
+                        DropHint.Visibility = Visibility.Collapsed; 
                         MessageBox.Show("Содержимое архива успешно загружено.", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
                     }
                 }
@@ -235,11 +221,9 @@ namespace ZipVolokSoft
 
         private void DeleteFileButton_Click(object sender, RoutedEventArgs e)
         {
-            // Получаем кнопку, на которую кликнули
             var button = sender as Button;
             if (button != null)
             {
-                // Получаем элемент, которому принадлежит эта кнопка (это будет элемент в ListBox)
                 var listItem = button.DataContext as string;
                 if (listItem != null)
                 {
@@ -251,15 +235,12 @@ namespace ZipVolokSoft
 
         private void CompressionLevel_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Получаем выбранный элемент
             var selectedItem = CompressionLevel.SelectedItem as ComboBoxItem;
 
             if (selectedItem != null)
             {
-                // Получаем текст выбранного элемента
                 string selectedCompression = selectedItem.Content.ToString();
 
-                // В зависимости от выбранного значения, изменяем уровень сжатия
                 switch (selectedCompression)
                 {
                     case "Низкий":
