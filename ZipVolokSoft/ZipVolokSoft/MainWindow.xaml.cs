@@ -116,8 +116,8 @@ namespace ZipVolokSoft
             {
                 SevenZip.SevenZipCompressor compressor = new SevenZip.SevenZipCompressor
                 {
-                    CompressionLevel = selectedCompressionLevel, // Используем выбранный уровень сжатия
-                    CompressionMethod = SevenZip.CompressionMethod.Lzma2 // Метод сжатия
+                    CompressionLevel = selectedCompressionLevel, 
+                    CompressionMethod = SevenZip.CompressionMethod.Lzma2 
                 };
 
                 List<string> files = new List<string>();
