@@ -106,3 +106,7 @@ E:\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.Properties.Reso
 E:\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.csproj.GenerateResource.cache
 E:\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.csproj.CoreCompileInputs.cache
 E:\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.csproj.CopyComplete
+E:\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\ZipVolokSoft.exe.manifest
+E:\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\bin\Debug\ZipVolokSoft.application
+E:\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.exe.manifest
+E:\ZipVolokSoft\ZipVolokSoft\ZipVolokSoft\obj\Debug\ZipVolokSoft.application
